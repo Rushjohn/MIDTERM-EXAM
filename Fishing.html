@@ -46,9 +46,9 @@ value="7.99"></td>
 <p align="center">
 <input type="text" name="txtTotal" size="10"
      value="0.00"></p>
+  
   </form>
-
-   <script language="javascript">
+  <script language="javascript">
       function calcTotal(){
          var strRod, strBox, prRod, prBox, strTotal
          strRod=document.form.qRod.value;
@@ -58,10 +58,12 @@ value="7.99"></td>
          strRod=parseInt(strRod)* prRod;
          strBox=parseInt(strBox)* prBox;
          strTotal=(strRod+strBox);
-          document.form.txtTotal.value=strTotal;
+         document.form.txtTotal.value=strTotal;
           
           }
-          </script></body></html>
+   </script>
+  </body>
+</html>
          
               
          
