@@ -16,18 +16,18 @@ action="javascript:void(0)">
 </tr><tr>
 <td> width="48"%">1 Fishing Rod &amp; Reel</td>
 <td width="10%">
-<input type="text" name="txtRod= size="5"
-<value="7.99"></td>
+<input type="text" name="txtRod" size="5"
+value="7.99"></td>
 <td width="43%"><select size="1" name="qRod>
 <option selected value="0>
-   Select Quantity</option>
+  Select Quantity<option>
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
 </select></td></tr><tr>
 <td width="48%">1 Tacle Box</td>
 <td width="10%">
-<input type="text" name="txtbox' size="5"
+<input type="text" name="txtbox" size="5"
    value="2.55"></td>
 <td width="43%"><select size="1" name="qBOx">   
 <option selected value="0">
@@ -44,6 +44,25 @@ action="javascript:void(0)">
 <p align="center">Thank you for your purchase.</p>
 <p align="center">Your total is:</p>
 <p align="center">
-<input type="text name="txtTotal" size="10"
+<input type="text" name="txtTotal" size="10"
      value="0.00"></p>
   </form>
+
+   <script language="javascript">
+      function calcTotal(){
+         var strRod, strBox, prRod, prBox, strTotal
+         strRod=document.form.qRod.value;
+         strBox=document.form.qBox.value;
+         prRod=document.form.txtRod.value;
+         prBox=document.form.txtBox.value;
+         strRod=parseInt(strRod)* prRod;
+         strBox=parseInt(strBox)* prBox;
+         strTotal=(strRod+strBox);
+          document.form.txtTotal.value=strTotal;
+          
+          }
+          </script></body></html>
+         
+              
+         
+         
